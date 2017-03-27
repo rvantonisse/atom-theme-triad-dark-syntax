@@ -1,0 +1,69 @@
+.syntax--php {
+
+  .syntax--comment.syntax--block.syntax--documentation {
+
+    .syntax--keyword {
+      color: @syntax-invisible-character-color;
+    }
+  }
+
+  .syntax--entity {
+
+    &.syntax--name {
+
+      &.syntax--class {
+        color: @green;
+        text-decoration: underline;
+      }
+
+      &.syntax--function {
+        color: @syntax-function-color;
+      }
+
+      &.syntax--type {
+
+        &.syntax--object {
+          color: @syntax-reserved-color;
+        }
+      }
+    }
+  }
+
+  .syntax--keyword {
+
+    &.syntax--control,
+    &.syntax--other,
+    &.syntax--operator {
+      color: @white;
+    }
+  }
+
+  .syntax--meta {
+
+    &.syntax--function-call {
+      color: @syntax-function-color;
+    }
+  }
+
+  .syntax--punctuation {
+
+    &.syntax--definition.syntax--parameters,
+    &.syntax--section {
+      color: @white;
+    }
+  }
+
+  .syntax--storage {
+
+    &.syntax--type {
+
+      &.syntax--function {
+        color: @syntax-function-color;
+      }
+    }
+  }
+
+  .syntax--support {
+    color: @syntax-reserved-color;
+  }
+}

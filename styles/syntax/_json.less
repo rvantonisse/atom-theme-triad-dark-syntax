@@ -1,0 +1,34 @@
+.syntax--json,
+.syntax--json5 {
+
+  .syntax--meta {
+
+    &.syntax--structure {
+
+      &.syntax--dictionary {
+        color: @white;
+
+        .syntax--string {
+          color: inherit;
+        }
+
+        & > .syntax--value {
+          font-weight: normal;
+
+          & > .syntax--string {
+            color: @syntax-string-color;
+
+            .syntax--punctuation {
+              color: @syntax-text-color;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .syntax--punctuation {
+    color: @syntax-text-color;
+    font-weight: normal;
+  }
+}
