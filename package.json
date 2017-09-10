@@ -3,7 +3,7 @@
   "theme": "syntax",
   "version": "0.1.0",
   "author": "RV Antonisse",
-  "description": "Simple theme that formats syntax in a functional and readable dark way. At least for me.",
+  "description": "Syntax in a triad color scheme, using primary, secondary and tertiary colors in a hierarchical way.",
   "repository": "https://github.com/rvantonisse/atom-theme-triad-dark-syntax",
   "license": "MIT",
   "engines": {
