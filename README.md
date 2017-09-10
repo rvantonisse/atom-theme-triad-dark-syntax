@@ -15,11 +15,3 @@ RV Antonisse
 * jsx
 * php
 * python
-
-
-
-## Screenshots
-Soon available.
-* html + css
-* js + json
-* Others...
