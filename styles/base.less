@@ -1,5 +1,16 @@
+.syntax--brace,
+.syntax--bracket {
+  &.syntax--curly,
+  &.syntax--round,
+  &.syntax--square {
+    color: @white;
+    font-weight: bold;
+  }
+}
+
 .syntax--comment {
-  color: @syntax-invisible-character-color;
+  color: @syntax-comment-color;
+  font-weight: normal;
   font-style: italic;
 
   .syntax--punctuation {
@@ -11,9 +22,7 @@
   color: @syntax-constant-color;
 
   &.syntax--character {
-
     &.syntax--entity {
-
       .syntax--punctuation {
         color: inherit;
       }
@@ -21,14 +30,18 @@
   }
 
   &.syntax--other {
-
     &.syntax--color {
-
       .syntax--punctuation {
         color: inherit;
       }
     }
   }
+}
+
+.syntax--illegal,
+.syntax--invalid {
+  color: @syntax-color-error !important;
+  background-color: fade(@syntax-color-error, 20%) !important;
 }
 
 .syntax--numeric,
@@ -45,7 +58,6 @@
 }
 
 .syntax--string {
-
   &.syntax--quoted {
     color: @blueaqua;
 
@@ -56,9 +68,5 @@
 }
 
 .syntax--support {
-  color: @purple;
-
-  &.syntax--constant {
-    color: @syntax-constant-color;
-  }
+  color: @syntax-reserved-color;
 }
