@@ -6,6 +6,22 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ---
 
+## [0.2.1] - 2017-09-11
+
+### Added
+
+- Added border-right for gutter-container
+
+### Changed
+
+- Editor styles
+  - Changed max-height for line-number to line-number within gutter.line-numbers (Caused multiline selection in git-line to look like one)
+
+- Javascript syntax
+  - Changed color for keyword.control.flow to @lime (issue #1)
+
+---
+
 ## [0.2.0] - 2017-09-11
 
 ### Added
