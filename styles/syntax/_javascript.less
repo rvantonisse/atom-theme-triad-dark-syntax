@@ -1,18 +1,13 @@
 .syntax--js {
-
   .syntax--constant {
-
     &.syntax--language {
-
       &.syntax--boolean {
         color: @syntax-constant-color;
       }
     }
 
     &.syntax--other {
-
       &.syntax--object {
-
         &.syntax--key {
           color: @white;
 
@@ -25,9 +20,7 @@
   }
 
   .syntax--entity {
-
     &.syntax--name {
-
       &.syntax--class {
         text-decoration: underline;
       }
@@ -37,7 +30,6 @@
       }
 
       &.syntax--type {
-
         &.syntax--object {
           color: @syntax-reserved-color;
         }
@@ -46,12 +38,11 @@
   }
 
   .syntax--keyword {
-
     &.syntax--control {
       color: @white;
 
       &.syntax--flow {
-        color: @syntax-variable-color;
+        color: @lime;
       }
 
       &.syntax--module {
@@ -74,11 +65,8 @@
   }
 
   .syntax--meta {
-
     &.syntax--class {
-
       &.syntax--extends {
-
         & + .syntax--entity.syntax--name.syntax--class {
           color: @green;
         }
@@ -91,7 +79,6 @@
     }
 
     &.syntax--function {
-
       &.syntax--parameters {
         color: @red;
       }
@@ -99,7 +86,6 @@
   }
 
   .syntax--punctuation {
-
     &.syntax--separator,
     &.syntax--terminator {
       color: @white;
@@ -107,9 +93,7 @@
   }
 
   .syntax--storage {
-
     &.syntax--type {
-
       &.syntax--function {
         color: @syntax-function-color;
       }
@@ -121,9 +105,7 @@
   }
 
   .syntax--variable {
-
     &.syntax--other {
-
       &.syntax--class {
         color: @green;
         text-decoration: underline;
