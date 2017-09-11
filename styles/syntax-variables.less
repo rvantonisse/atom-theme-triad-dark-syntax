@@ -5,10 +5,10 @@
 
 // General colors
 @syntax-text-color: @very-light-gray;
-@syntax-invisible-character-color: @gray;
+@syntax-background-color: @very-dark-gray;
+@syntax-invisible-character-color: @dark-gray;
 @syntax-cursor-color: @syntax-text-color;
 @syntax-selection-color: fade(contrast(@syntax-background-color), 10%);
-@syntax-background-color: @very-dark-gray;
 
 // Guide colors
 @syntax-wrap-guide-color: @dark-gray;
@@ -25,21 +25,28 @@
 @syntax-gutter-background-color: @syntax-background-color;
 @syntax-gutter-background-color-selected: @syntax-selection-color;
 
+// State coloring
+@syntax-color-info: @blueaqua;
+@syntax-color-success: @green;
+@syntax-color-warning: @orange;
+@syntax-color-error: @red;
+
 // For git diff info. i.e. in the gutter
-@syntax-color-renamed: @blueaqua;
-@syntax-color-added: @green;
-@syntax-color-modified: @orange;
-@syntax-color-removed: @red;
+@syntax-color-renamed: @syntax-color-info;
+@syntax-color-added: @syntax-color-success;
+@syntax-color-modified: @syntax-color-warning;
+@syntax-color-removed: @syntax-color-error;
 
 /*
 Theme specific
 */
 // Syntax base colors
+@syntax-comment-color: @gray;
 @syntax-constant-color: @aqua;
 @syntax-function-color: @orange;
 @syntax-reserved-color: @purple;
 @syntax-string-color: @blueaqua;
-@syntax-variable-color: @lime;
+@syntax-variable-color: @red;
 
 // Sizes
 @syntax-border-radius: 3px; /* stylelint-disable */
